@@ -1,0 +1,225 @@
+.header, .main, .footer {
+    background-color: #f3f3f3;
+}
+
+.header, .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 180px);
+}
+
+.main__section {
+    width: 600px;
+    height: 690px;
+    border-radius: 10px;
+    background-color: #c0c0c0;
+    margin: 0 auto;
+}
+
+.section__input {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section__input input {
+    width: 500px;
+    height: 60px;
+    border-radius: 10px 0 0 0;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000;
+}
+
+.section__input button {
+    width: 100px;
+    height: 60px;
+    border-radius: 0 10px 0 0;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__input img {
+    width: 30px;
+    height: 30px;
+}
+
+.section__ul {
+    width: 600px;
+    height: 630px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    list-style: none;
+    padding: 8px 0;
+}
+
+.section__ul li {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ul__div-buttons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.ul__li-input-task-check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    accent-color: #278d2a;
+}
+
+.ul__li-input-task {
+    width: 450px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    background-color: #c0c0c0;
+    cursor: default;
+}
+
+.input__task-cursor {
+    cursor: text;
+}
+
+.ul__div-buttons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.ul__div-buttons button, .ul__div-buttons img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c0c0c0;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #5a5a5a;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #747474;
+}
+
+@media (max-width: 700px) {
+    .main__section {
+        width: 500px;
+    }
+    .section__input input {
+        width: 400px;
+        font-size: 1.1rem;
+    }
+    .section__ul {
+        width: 500px;
+    }
+    .ul__li-input-task {
+        width: 370px;
+        padding: 0 20px 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main__section {
+        width: 400px;
+    }
+    .section__input input {
+        width: 300px;
+        font-size: 1rem;
+    }
+    .section__ul {
+        width: 400px;
+    }
+    .ul__li-input-task {
+        width: 270px;
+        padding: 0 20px 0 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__section {
+        width: 300px;
+    }
+    .section__input input {
+        width: 220px;
+        font-size: 0.9rem;
+    }
+    .section__input button {
+        width: 80px;
+    }
+    .section__ul {
+        width: 300px;
+    }
+    .ul__div-buttons {
+        gap: 0px;
+    }
+    .ul__li-input-task-check {
+        margin-left: 10px;
+    }
+    .ul__li-input-task {
+        width: 170px;
+        padding: 0 0 0 5px;
+        font-size: 0.9rem;
+    }
+    .ul__div-buttons div {
+        gap: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-height: 880px) {
+    .main__section {
+        height: 100%;
+    }
+    .section__ul {
+        max-height: calc(100vh - 180px - 60px);
+        overflow-y: auto;
+    }
+}
