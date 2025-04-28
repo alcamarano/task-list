@@ -31,7 +31,7 @@ Este é um projeto de uma lista de tarefas simples, desenvolvido com HTML, CSS e
 
 ## 🕹️ Teste agora
 
-Quer organizar suas tarefas de forma prática? <a href="">Clique aqui</a> para acessar o projeto diretamente do seu navegador.
+Quer organizar suas tarefas de forma prática? <a href="https://task-list-omega-gules.vercel.app/">Clique aqui</a> para acessar o projeto diretamente do seu navegador.
 
 ## 📄 Licença
 
