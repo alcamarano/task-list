@@ -53,6 +53,7 @@ ulTaskList.addEventListener("click", (event) => {
         if (inputTask.readOnly) {
             inputTask.readOnly = false;
             inputTask.classList.add("input__task-cursor");
+            inputTask.focus();
             btnEdit.src = "assets/img/edit-check.svg";
         } else {
             inputTask.readOnly = true;
